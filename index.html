@@ -15,6 +15,7 @@
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -47,13 +48,13 @@
     <main>
         <!-- banner -->
         <section class="container">
-            <h2 class="display-2 fw-900 mb-80">透過<br /> AI 工具王的<br /> 強大模型
+            <h2 class="display-2 line-height-120 fw-900 mb-40">透過<br /> AI 工具王的<br /> 強大模型
                 <br /> 讓您的業務更聰明
             </h2>
-            <div class="row banner mb-100">
-                <a href="#" class="btn h6 fw-900 ">開始使用</a>
+            <div class="row mb-120">
+                <a href="#" class="btn h6 fw-900 btn-start">開始使用</a>
             </div>
-            <div class="row justify-content-end grass-animation mb-160">
+            <div class="d-flex justify-content-end grass-animation mb-160">
                 <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/deco.png" alt="animation" />
                 <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/deco.png" alt="animation" />
                 <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/deco.png" alt="animation" />
@@ -66,12 +67,12 @@
                     <h2 class="h3 fw-900">我們的服務</h2>
                 </div>
                 <div class="col-8">
-                    <p class="fw-900 h4">
+                    <p class="fw-900 h4 line-height-120">
                         我們相信透過 AI 技術，<br> 包括圖像識別、自然語言處理和機器翻<br>譯等，讓您更快、更準確地做出決策。
                     </p>
                 </div>
             </div>
-            <ul class="row mb-80">
+            <ul class="row mb-160">
                 <li class="col-4">
                     <div class="service-item h-100">
                         <span class="display-3 material-icons">flash_on</span>
@@ -100,77 +101,91 @@
                     </div>
                 </li>
             </ul>
-            <!-- 來自合作夥伴 -->
         </section>
+        <!-- 來自合作夥伴 -->
         <section class="container">
             <div class="row mb-80">
                 <h2 class="h3 fw-900">來自合作夥伴</h2>
             </div>
-            <div class="row mb-160">
-                <ul class="enterprise mb-20 mb-md-12">
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true" alt="">
-                    </li>
-                </ul>
-                <ul class="enterprise mb-160 mb-md-48">
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true" alt="">
-                    </li>
-                    <li>
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=trueg" alt="">
-                    </li>
-                </ul>
+            <!-- 輪播圖片 -->
+            <div class="row mb-160 enterprise">
+                <div class="swiper mb-20">
+                    <span class="left-hidden"></span>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true" alt="">
+                        </div>
+                    </div>
+                    <span class="right-hidden"></span>
+                </div>
+                <div class="swiper">
+                    <span class="left-hidden"></span>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true" alt="">
+                        </div>
+
+                    </div>
+                    <span class="right-hidden"></span>
+                </div>
             </div>
+            <!-- 五星評價 -->
             <ul class="row mb-160">
                 <li class="col-4">
                     <div class="recommand-item h-100">
-                        <h4 class="material-icons mb-20">
+                        <h4 class="material-icons mb-22">
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                         </h4>
-                        <p class="fw-400 flex-grow">
+                        <p class="fw-400 flex-grow mb-20 recommand-content">
                             非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！
                         </p>
-                        <div class="recommand-footer mt-20">
+                        <div class="recommand-footer">
                             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/avatar3.png" alt="recommand-person" />
                             <div class="recommand-info">
                                 <h5 class="fw-700">陳小姐</h5>
@@ -181,17 +196,17 @@
                 </li>
                 <li class="col-4">
                     <div class="recommand-item h-100">
-                        <h4 class="material-icons mb-20">
+                        <h4 class="material-icons mb-22">
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                         </h4>
-                        <p class="fw-400 flex-grow">
+                        <p class="fw-400 flex-grow mb-20 recommand-content">
                             作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！
                         </p>
-                        <div class="recommand-footer mt-20">
+                        <div class="recommand-footer">
                             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/avatar1.png" alt="recommand-person" />
                             <div class="recommand-info">
                                 <h5 class="fw-700">劉小姐</h5>
@@ -202,17 +217,17 @@
                 </li>
                 <li class="col-4">
                     <div class="recommand-item h-100">
-                        <h4 class="material-icons mb-20">
+                        <h4 class="material-icons mb-22">
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                             <span>star_rate</span>
                         </h4>
-                        <p class="fw-400 flex-grow">
+                        <p class="fw-400 flex-grow mb-20 recommand-content">
                             我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！
                         </p>
-                        <div class="recommand-footer mt-20">
+                        <div class="recommand-footer">
                             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/9d0ceff5ed470b504331b8d897ea8518b8f163cd/2023web-camp/avatar3.png" alt="recommand-person" />
                             <div class="recommand-info">
                                 <h5 class="fw-700">黃先生</h5>
@@ -220,28 +235,27 @@
                             </div>
                         </div>
                     </div>
-
                 </li>
             </ul>
         </section>
         <!-- 超酷的應用 -->
         <section>
-            <div class="bg-white application py-160">
+            <div class="bg-white application py-160 mb-160">
                 <div class="container">
                     <h2 class="display-3 mb-80 fw-900 text-center">這些超酷的應用，都來自 AI工具王</h2>
-                    <div class="row">
+                    <div class="row mb-24">
                         <form class="col-12 d-flex align-items-center application-search mb-24">
                             <span class="material-icons"> search </span>
                             <input type="text" placeholder="輸入關鍵字搜尋" />
                         </form>
                     </div>
-                    <div class="row application-navbar">
+                    <div class="row application-navbar mb-40">
                         <!-- 篩選 -->
                         <div class="col-2 d-flex align-items-center application-filter">
                             <button class="btn">
-                                <span class="me-14 fw-400"> 篩選</span>
-                                <span class="material-icons">filter_alt</span>
-                            </button>
+                            <span class="me-14 fw-400"> 篩選</span>
+                            <span class="material-icons">filter_alt</span>
+                        </button>
                         </div>
                         <!-- 選項 -->
                         <ul class="col-6 row align-items-center justify-content-between application-list">
@@ -270,13 +284,13 @@
                         <!-- 排序 -->
                         <div class="col-2 d-flex align-items-center justify-content-end application-order">
                             <button class="btn">
-                                <span class="me-14 fw-400">由新到舊</span>
-                                <span class="material-icons">expand_more</span>
-                         </button>
+                            <span class="me-14 fw-400">由新到舊</span>
+                            <span class="material-icons">expand_more</span>
+                     </button>
                         </div>
                     </div>
                     <ul class="row mb-40">
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true" alt="tool1" class="tool">
@@ -295,7 +309,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true" alt="tool2" class="tool">
@@ -315,7 +329,7 @@
                             </div>
 
                         </li>
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true" alt="tool3" class="tool">
@@ -335,7 +349,7 @@
                             </div>
 
                         </li>
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true" alt="tool4" class="tool">
@@ -355,7 +369,7 @@
                             </div>
 
                         </li>
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true" alt="tool5" class="tool">
@@ -375,7 +389,7 @@
                             </div>
 
                         </li>
-                        <li class="col-4">
+                        <li class="col-4 mb-24">
                             <div class="application-item h-100">
                                 <div class="application-img">
                                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true" alt="tool6" class="tool">
@@ -422,50 +436,51 @@
         <!-- 建立服務 -->
         <section>
             <div class="container">
-                <div class="row start-service">
-                    <h2 class="h1 fw-900 mb-60">現在就來建立屬於你的服務吧</h2>
-                    <a href="#" class="btn fw-900">開始使用 <span class="material-icons">call_made</span></a>
+                <div class="row start-service mb-80">
+                    <h2 class="h1 fw-900 mb-40">現在就來建立屬於你的服務吧</h2>
+                    <a href="#" class="btn fw-900 btn-start h5">開始使用 <span class="material-icons ms-16">call_made</span></a>
                 </div>
             </div>
         </section>
+        <!-- 下方連結 -->
         <section>
             <div class="container border-top">
-                <div class="botton-navbar">
-                    <div class="d-flex justify-content-end">
+                <div class="bottom-navbar">
+                    <div class="bottom-logo">
                         <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="logo" class="logo"></a>
                     </div>
-                    <ul>
+                    <ul class="bottom-link">
                         <li><a href="./index.html" class="fw-900 text-white display-3">首頁</a></li>
                         <li><a href="./price.html" class="fw-900 text-white display-3">定價</a></li>
                     </ul>
-
                 </div>
             </div>
         </section>
     </main>
-
     <footer>
-        <div class="container border-top">
-            <div class="row d-flex justify-content-between footer">
+        <div class="container d-flex border-top footer justify-content-between ">
+            <div class="d-flex justify-content-between footer-left">
                 <p class="copy-right fw-700">AI工具王 © 2023</p>
-                <ul class="footer-row d-flex">
+                <ul class="footer-media d-flex">
                     <li class="media-link me-20"><a href="#" class="fw-700">Facebook</a></li>
                     <li class="media-link me-20"><a href="#" class="fw-700">Twitter</a></li>
                     <li class="media-link me-20"><a href="#" class="fw-700">Instagram</a></li>
                 </ul>
+            </div>
+
+            <div class="footer-right">
                 <a href="#" class="scrollToTop d-flex" id="scrollToTop">
                     <span class="fw-700">Back to top</span>
                     <span class="material-icons"> arrow_upward </span>
                 </a>
-
             </div>
+
         </div>
-
     </footer>
-
 
     <script src="./js/jquery-3.6.3.min.js">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="./js/web.js">
     </script>
 </body>

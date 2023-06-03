@@ -10,8 +10,22 @@ $('.qa-item').click(function(e) {
     $(this).find('.add-icon').toggleClass('d-none');
     $(this).find('.remove-icon').toggleClass('d-block');
     $(this).find('.collapse-content p').toggleClass('show');
-<<<<<<< HEAD
 });
-=======
+
+var mySwiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true, // 設置為循環播放
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 0, // 輪播延遲時間（單位：毫秒）
+        disableOnInteraction: false // 用戶操作後是否停止自動輪播
+    },
+    lazy: {
+        loadPrevNext: true,
+    },
+    speed: 3500, // 滑動速度（單位：毫秒）
 });
->>>>>>> d9ea1848e18e0c78b455a8c00d486d64e6d43ab3
+
+$(".navbar-btn").click(function() {
+    $(".navbar-collapse").toggleClass("show");
+});
